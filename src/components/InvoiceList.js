@@ -64,7 +64,7 @@ function InvoiceList() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {invoices.map((invoice) => (
+            {invoices?.map((invoice) => (
               <TableRow key={invoice.id}>
                 <TableCell>{invoice.invoice_number}</TableCell>
                 <TableCell>{invoice.customer_name}</TableCell>
